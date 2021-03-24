@@ -1,0 +1,104 @@
+#container {
+    display: grid;
+    width: 300px;
+    margin: auto;
+    background-color: #b7ad5f;
+    border-radius: 5px;
+    padding: 15px;
+    grid-gap: 10px;
+    grid-template-areas: 
+        'result result result result'
+        'add subtract multiply division'
+        'digit7 digit8 digit9 equals'
+        'digit4 digit5 digit6 equals'
+        'digit1 digit2 digit3 equals'
+        'clear clear digit0 equals';
+}
+#display {
+    background-color: #efeeee;
+    color: #414141;
+    height: 50px;
+    border-radius: 5px;
+    text-align: right;
+    line-height: 45px;
+    grid-area: result;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+.key {
+    background-color: #efeeee;
+    color: #414141;
+    height: 50px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plus {
+    grid-area: add;
+}
+.minus {
+    grid-area: subtract;
+}
+.multiply {
+    grid-area: multiply;
+}
+.divide {
+    grid-area: division;
+}
+.none {
+    grid-area: clear;
+}
+.total {
+    grid-area: equals;
+    background-color: #efeeee;
+    color:#414141;
+    height: 230px;
+    font-size: 24px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 230px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.zero {
+    grid-area: digit0;
+}
+.one {
+    grid-area: digit1;
+}
+.two {
+    grid-area: digit2;
+}
+.three {
+    grid-area: digit3;
+}
+.four {
+    grid-area: digit4;
+}
+.five {
+    grid-area: digit5;
+}
+.six {
+    grid-area: digit6;
+}
+.seven {
+    grid-area: digit7;
+}
+.eight {
+    grid-area: digit8;
+}
+.nine {
+    grid-area: digit9;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
