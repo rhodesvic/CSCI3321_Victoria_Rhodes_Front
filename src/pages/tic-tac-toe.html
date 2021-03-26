@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="../../style/tic-tac-toe.css">
+    <script src="../../script/tic-tac-toe.js"></script>
+</head>
+
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div id="container">
+        <div id="box_0" class="box" onclick ="turn(this)"></div>
+        <div id="box_1" class="box" onclick ="turn(this)"></div>
+        <div id="box_2" class="box" onclick ="turn(this)"></div>
+        <div id="box_3" class="box" onclick ="turn(this)"></div>
+        <div id="box_4" class="box" onclick ="turn(this)"></div>
+        <div id="box_5" class="box" onclick ="turn(this)"></div>
+        <div id="box_6" class="box" onclick ="turn(this)"></div>
+        <div id="box_7" class="box" onclick ="turn(this)"></div>
+        <div id="box_8" class="box" onclick ="turn(this)"></div>
+    </div>
+    <br>
+    <p id="played">Player 1 is "X". Player 2 is "O". Player 1 starts.</p>
+    <div><span id="state">Current Turn: </span><span id="player">Player 1</span></div>
+    <button onclick="reset()">Reset Game</button>
+</body>
+</html>

@@ -1,0 +1,98 @@
+#container {
+    display: grid;
+    width: 315px;
+    height: 315px;
+    margin: auto;
+    background-color: #a5f9f1;
+    border-radius: 5px;
+    padding: 15px;
+    grid-template-areas:
+        'box1 box2 box3'
+        'box4 box5 box6'
+        'box7 box8 box9';
+}
+.box {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    color: #343434;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s linear;
+}
+.box:hover {
+    cursor: pointer;
+    background-color:white;
+}
+
+#box_0 {
+    grid-area: box1;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+#box_1 {
+    grid-area: box2;
+    border-top-color: transparent;
+}
+#box_2 {
+    grid-area: box3;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+#box_3 {
+    grid-area: box4;
+    border-left-color: transparent;
+}
+#box_4 {
+    grid-area: box5;
+}
+#box_5 {
+    grid-area: box6;
+    border-right-color: transparent;
+}
+
+#box_6 {
+    grid-area: box7;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+#box_7 {
+    grid-area: box8;
+    border-bottom-color: transparent;
+}
+#box_8 {
+    grid-area: box9;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+body {
+    background-color: #79c6c6;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+button {
+    border: 1px solid #141414;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+button:hover {
+    border: 2px solid #141414;
+    background-color: #a5f9f1;
+    color: #79c6c6;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: bold;
+}
+p, #state, #player {
+    color: white;
+    font-size: 18px;
+}
